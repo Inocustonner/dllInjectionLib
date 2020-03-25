@@ -4,9 +4,9 @@ include_directories("${CMAKE_SOURCE_DIR}/include")
 
 
 add_definitions(/D_CRT_SECURE_NO_WARNINGS)
-add_library(table_gui STATIC dllInj.cpp)
+add_library(dllInj STATIC dllInj.cpp)
 #force MT flags
-set_property(TARGET table_gui PROPERTY
+set_property(TARGET dllInj PROPERTY
   MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
   
 #force c++latest on msvc  
