@@ -1,4 +1,4 @@
-#include "dllInj.h"
+#include <dllInjLib/dllInj.h>
 #include <ios>					// for create console
 #include <cstdio>				// for create console
 #include <string.h>

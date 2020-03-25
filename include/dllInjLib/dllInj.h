@@ -10,7 +10,7 @@
 // #include <cstdio>
 #define report_errw(msg, ...) fprintf(stderr, "[dllInj] " msg "GetLastError : %d", __VA_ARGS__, GetLastError())
 #define report_err(msg, ...) fprintf(stderr, "[dllInj] " msg, __VA_ARGS__)
-#define report(msg, ...) printf("[dllInj]" msg, __VA_ARGS__)
+#define report(msg, ...) printf("[dllInj] " msg, __VA_ARGS__)
 
 std::optional<std::vector<HMODULE>> GetProcessModules(const HANDLE h_proc, DWORD modules_cnt = -1);
 DWORD GetVirtualAddressBase(const HANDLE h_proc);
