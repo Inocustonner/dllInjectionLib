@@ -115,7 +115,7 @@ bool write_at(const HANDLE h_proc, void *addr, const void *src, size_t len)
 }
 
 
-bool PlaceCodeCave(const HANDLE h_proc, DWORD cave_addr, DWORD hole_RVA, DWORD nop_cnt = 0)
+bool PlaceCodeCave(const HANDLE h_proc, DWORD cave_addr, DWORD hole_RVA, DWORD nop_cnt)
 {
 	DWORD vba;	// virual base address
 	auto wrpd_module = GetProcessModules(h_proc, 1);
